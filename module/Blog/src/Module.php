@@ -1,18 +1,13 @@
 <?php
 
-namespace Blob;
+namespace Blog;
 
-class module
+class Module
 {
 
     public function getConfig()
     {
-        return include __DIR__ . "../config/module.config.php";
-    }
-
-    public function getController()
-    {
-        
+        return include __DIR__ . "/../config/module.config.php";
     }
 
 }
