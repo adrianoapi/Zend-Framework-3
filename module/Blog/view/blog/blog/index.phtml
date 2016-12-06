@@ -14,7 +14,15 @@
             <tr>
                 <td><?= $this->escapeHtml($post->title) ?></td>
                 <td><?= $this->escapeHtml($post->content) ?></td>
-                <td></td>
+                <td>
+                    <a href="<?= $this->url('post', ['action' => 'edit', 'id' => $post->id]); ?>">
+                        Edit
+                    </a>
+                    <a href="<?= $this->url('post', ['action' => 'delete', 'id' => $post->id]); ?>">
+                        Delete
+                    </a>
+                </td>
+
             </tr>
         <?php endforeach; ?>
     </tbody>
